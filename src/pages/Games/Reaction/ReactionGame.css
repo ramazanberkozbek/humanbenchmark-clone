@@ -1,15 +1,12 @@
 
 /* BLUE SECTION */
 .lightning-icon svg {
-  color: white; /* Default color */
-  transition: color 0.2s ease;
-  font-size: 8rem;
-  margin-bottom: -3rem;
+
 }
 .reaction-container  {
   background-color: #2b87d1;
   color: white;
-  padding: 4rem 2rem;
+  padding: 4rem 1rem;
   text-align: center;
   min-height: 60vh;
   display: flex;
@@ -21,7 +18,7 @@
 .main-title {
   font-size: 6.5rem;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem;  
 }
 .subtitle {
   font-size: 1.4rem;
@@ -32,14 +29,71 @@
 
 /* Different background colors for each game state */
 
-[data-game-state="waiting"] {
+[data-game-state="waitForGreen"] {
   background-color: #993333; /* Darker red */
   color: white;
-  cursor: not-allowed;
 }
 
-[data-game-state="clicking"] {
+[data-game-state="clickNow"] {
   background-color: #4CAF50; /* Green */
   color: white;
   cursor: pointer;
+}
+.game-icon {
+  color: white; 
+  transition: color 0.2s ease;
+  font-size: 8rem;
+  margin-bottom: -4rem;
+  margin-top: -70px;
+}
+.error-message {
+  font-weight: 500;
+  font-size: 2.5rem;
+  padding: 4rem;
+}
+.stats-image {
+  width: 80%;
+  max-width: 900px;
+  margin: 2rem auto;
+  display: block;
+  object-fit: contain;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+  
+.stats-image:hover {
+  transform: scale(1.02);
+}
+.statistics-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.statistics-section {
+  flex: 1;
+  max-width: 500px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.statistics-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.average-reaction-time {
+  font-size: 3.5rem;
+  color: #2b87d1; 
+  margin: 1rem 0;
+}
+
+.reaction-times {
+  font-size: 1.6rem;
+  color: #666;
+  margin-top: 1rem;
 }
