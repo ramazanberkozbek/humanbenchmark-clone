@@ -4,76 +4,20 @@
 .copyable {
   user-select: text;
 }
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  color: black;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  position: sticky; 
-  top: 0; 
-  background-color: white; 
-  z-index: 100; 
-}
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-.header-left div:first-child {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.2rem;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: all 0.2s ease;
-}
-.header-left div:first-child:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-.header-left div:first-child svg { /* HUMAN BENCHMARK LIGHTING */
-  color: #C5C6C7;
-}
-.dashboard {  
-  font-size: 1.2rem;
-  opacity: 0.9;
-  cursor: pointer;
-}
-.header-right {
-  display: flex;
-  gap: 1.5rem;
-}
-.signUp, .logIn {
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  font-size: 1.2rem;
-}
-.dashboard, .signUp, .logIn {
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: all 0.2s ease;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  font-weight: 500; 
-}
-.dashboard:hover, .logIn:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.signUp:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.signUp {
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: all 0.2s ease;
-  cursor: pointer;
+
+/* MAVİ KISIM LİNK (DEĞİŞTİREBİLİRİM) */
+.blue-section:hover .lightning-icon svg {
+  color: #ffd700; /* Yellow color */
+  transition: color 0.2s ease;
 }
 
 /* BLUE SECTION */
+.lightning-icon svg {
+  color: white; /* Default color */
+  transition: color 0.2s ease;
+  font-size: 8rem;
+  margin-bottom: -3rem;
+}
 .blue-section {
   background-color: #2b87d1;
   color: white;
@@ -85,10 +29,6 @@ header {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-}
-.lightning-icon {
-  font-size: 8rem;
-  margin-bottom: -3rem;
 }
 .main-title {
   font-size: 6.5rem;
@@ -115,7 +55,10 @@ header {
 .get-started-button:hover {
   background-color: white;
 }
-
+a:has(.blue-section) {
+  text-decoration: none;
+  color: inherit;
+}
 /* REKLAM */
 .ad {
   display: flex;
@@ -164,16 +107,15 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 280px;
-  height: 200px;
-  margin: 1rem;
+  width: 240px;
+  height: 240px;
 }
 .test-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 .card-icon {
-  font-size: 3.5rem; /* Increased icon size */
+  font-size: 4.5rem; /* Increased icon size */
   margin-bottom: 1rem;
 }
 .reaction-icon svg {
@@ -191,4 +133,39 @@ header {
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+.test-section a {
+  text-decoration: none;
+  color: inherit;
+}
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  margin-top: 4rem;
+  border-top: 1px solid #eaeaea;
+}
+
+.footer-left {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.footer-right {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-right a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.footer-right a:hover {
+  color: #2b87d1;
 }

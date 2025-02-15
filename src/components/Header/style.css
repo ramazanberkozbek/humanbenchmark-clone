@@ -1,0 +1,74 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: black;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky; 
+  top: 0; 
+  background-color: white; 
+  z-index: 100; 
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.header-left div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+.header-left div:first-child:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+.header-left div:first-child svg { /* HUMAN BENCHMARK LIGHTING */
+  color: #C5C6C7;
+}
+.dashboard {  
+  font-size: 1.2rem;
+  opacity: 0.9;
+  cursor: pointer;
+}
+.header-right {
+  display: flex;
+  gap: 1.5rem;
+}
+.signUp, .logIn {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.dashboard, .signUp, .logIn {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500; 
+}
+.dashboard:hover, .logIn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.signUp:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.signUp {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+header a,
+header Link {
+  text-decoration: none;
+  color: inherit;
+}
