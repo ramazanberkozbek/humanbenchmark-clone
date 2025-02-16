@@ -16,10 +16,10 @@ import ad2 from '../../../public/images/ad2.png';
 import reactionTimeStats from '../../../public/images/static.png'; 
 
 const GameStates = {
-  START: 'start',                   // Initial state showing instructions
+  START: 'start',                  // Initial state showing instructions
   WAIT_FOR_GREEN: 'waitForGreen',  // Red screen waiting
-  CLICK_NOW: 'clickNow',          // Green screen 
-  SHOW_SCORE: 'showScore'        // Results
+  CLICK_NOW: 'clickNow',           // Green screen 
+  SHOW_SCORE: 'showScore'          // Results
 };
 
 function ReactionGame() {

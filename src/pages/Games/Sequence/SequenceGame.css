@@ -1,0 +1,35 @@
+/* SequenceGame.css */
+
+.game-board {
+  display: grid; /* CSS Grid layout'u kullan */
+  grid-template-columns: repeat(3, 100px); /* 3 sütun, her biri 100px genişliğinde */
+  grid-template-rows: repeat(3, 100px);    /* 3 satır, her biri 100px yüksekliğinde */
+  gap: 10px; /* Kareler arası boşluk */
+  margin: 20px; /* Oyun alanının etrafında boşluk */
+}
+
+.square {
+  width: 97px; /* Kare genişliği */
+  height: 97px; /* Kare yüksekliği */
+  background-color:rgb(67, 102, 206); /* Açık gri arka plan rengi */
+  border-radius: 8px;
+  transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+.square.active {
+  background-color: white;
+  transform: scale(1.04);
+}
+
+.sequence-game-wrapper {
+  background-color: #2b87d1;
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+  height: 60vh;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}

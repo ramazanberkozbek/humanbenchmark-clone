@@ -44,11 +44,13 @@ function Home() {
         </Link>
 
         {/* Sequence Memory */}
-        <div className='test-card'>
-          <div className="card-icon reaction-icon"><PiGridFour /></div>
-          <h2 className="card-title">Sequence Memory</h2>
-          <p className="card-description">Remember an increasingly long pattern of button presses.</p>
-        </div>
+        <Link to='/games/sequence'>
+          <div className='test-card'>
+            <div className="card-icon reaction-icon"><PiGridFour /></div>
+            <h2 className="card-title">Sequence Memory</h2>
+            <p className="card-description">Remember an increasingly long pattern of button presses.</p>
+          </div>
+        </Link>
 
         {/* Aim Trainer */}
         <div className='test-card'>

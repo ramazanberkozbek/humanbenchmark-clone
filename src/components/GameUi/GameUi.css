@@ -1,0 +1,41 @@
+.game-ui {
+  background-color: #2b87d1;
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.game-title {
+  font-size: 6.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;  
+}
+.game-description {
+  font-size: 1.4rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  margin-top: -40px;
+}
+.game-icon {
+  color: white; 
+  transition: color 0.2s ease;
+  font-size: 8rem;
+  margin-bottom: -4rem;
+  margin-top: -70px;
+}
+.game-ui-button {
+  background-color: #ffd700; /* Yellow background */
+  color: black;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* Only transition background-color */
+}
